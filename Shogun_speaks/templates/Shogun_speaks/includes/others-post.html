@@ -1,0 +1,22 @@
+<li>
+    <article class="others-post">
+        <a class="list-item" href="{% url 'others-post-detail' post.slug %}">
+
+            <img src="{{ post.image.url }}" alt="{{ post.title }}" class="list-item-image" />
+
+            <div class="post__content">
+
+                <h3 class="list-item-title">{{ post.title }}</h3>
+
+                <div class="sub-headings">
+                    <p class="list-item-tag">
+                        Tags
+                    </p>
+                    <p class="list-item-author">{{ post.author }}</p>
+                    <p class="list-item-date">{{ post.date | timesince }} ago<p>
+                </div>
+
+            </div>
+        </a>
+    </article>
+</li>

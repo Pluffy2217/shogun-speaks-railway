@@ -1,0 +1,236 @@
+.latest {
+    font-size: 70px;
+    margin-left: 40px;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.posts-list {
+    position: relative;
+    list-style: none;
+}
+
+.post__content {
+    margin-top: -30px;
+}
+
+.list-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+.sub-headings {
+    font-size: 12px;
+    display: flex;
+    margin-top: -27px;
+    font-weight: 600;
+    color: rgb(65, 61, 61);
+}
+
+#about {
+  position: relative;
+  top: 92px;
+  right: 28px;
+  display: flex;
+  color: white;
+  font-weight: 700;
+  max-width: 30%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#about div {
+  font-size: 13px;
+  margin: 0 10px;
+}
+
+
+.list-item-image {
+    width: 221px;
+    height: 124px;
+    margin-right: 20px;
+}
+.list-item:hover .list-item-image {
+    opacity: 80%;
+} 
+
+.list-item-tag {
+    margin-right: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 228, 196, 0);
+    padding: 2px 20px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    display: none;
+}
+.list-item-author {
+    margin-right: 50px;
+}
+.list-item-title {
+    font-size: 21.5px;
+    width: 80%;
+}
+
+#top-post {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: -50px;
+}
+#top-post:hover .top-post-title {
+    background-image: linear-gradient(#ee648d, rgb(0, 0, 0,0.2));
+}
+
+
+#top-post img {
+    position: relative;
+    right: -40px;
+    top: -60px;
+    width: 98%;
+    height: 37.5em;
+    opacity: 100%;
+}
+#top-post .list-item-title {
+    font-size: 20px;
+    margin: 45px 0 0 50px;
+    color: white;
+    width: 80%;
+    
+}
+#top-post .sub-headings {
+    color: rgb(0, 0, 0);
+}
+
+#top-post .top-post-date {
+    position: absolute;
+    left: -20px;
+    top: -60px;
+    height: 50em;
+    width: 11%;
+    background-color: rgb(43, 144, 226);
+    
+}
+#top-post .top-post-title {
+    position: absolute;
+    left: 80px;
+    top: 412px;
+    height: 8em;
+    width: 55%;
+    background-color: #ee648d;
+    
+}
+
+#top-post .top-post-sub-heading {
+    position: absolute;
+    top: 420px;
+    left: 130px;
+    display: flex;
+    font-size: 11px;
+    color: white;
+    font-weight: 700;
+    
+}
+#top-post .list-item-date {
+    position: relative;
+    top: 360px;
+    left: -95px;
+    font-size: 34px;
+    width: 300px;
+    transform: rotate(270deg);
+    color: white;
+    font-weight: 700;
+    
+}
+
+@media all and (max-width: 500px) {
+    #top-post {
+        margin-bottom: 70px;
+    }
+    .latest {
+        font-size: 45px;
+        margin-left: 0;
+    }
+    .list-item {
+        position: relative;
+        right: 40px;
+    }
+    .list-item-image {
+        width: 120px;
+        height: 70px;
+    }
+    .list-item-title {
+        font-size: 14px;
+        width: 95%;
+        margin: 25px 0 25px 0;
+    }
+    .sub-headings p{
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    .list-item-author{
+        min-width: 110px;
+        margin-right: 0px;
+    }
+    .list-item-date {min-width: 120px;}
+
+    .list-item-tag {
+        margin-right: 20px;
+        padding: 1px 10px;
+        font-size: 10px;
+    }
+    
+    #about {
+      top: 90px;
+      max-width: 100%;
+    }
+
+    #top-post img {
+        left: 80px;
+        width: 94.3%;
+        height: 220px;
+    }
+    #top-post .top-post-title {
+        width: 336px;
+        height: 80px;
+        left: 80px;
+        top: 160px;
+    }
+    #top-post .top-post-date {
+        left: 20px;
+        height: 300px;
+        width: 60px;
+    }
+    #top-post .list-item-date {
+        top: 100px;
+        left: -120px;
+        font-size: 22px;
+    }
+    #top-post .list-item-title {
+        font-size: 14px;
+        width: 90%;
+        margin: 25px 0 0 20px;
+    }
+    #top-post .top-post-sub-heading {
+        font-size: 5px;
+        top: 158px;
+        left: 100px;
+    }
+    #top-post .list-item-author {
+        font-size: 10px;
+    }
+    #top-post .list-item-tag {
+        font-size: 7px;
+    }
+    
+}
+
+@media all and (max-width: 400px) {
+    #top-post img {
+        width: 94%;
+    }
+    #top-post .top-post-title {
+        width: 93.6%;
+    }
+}

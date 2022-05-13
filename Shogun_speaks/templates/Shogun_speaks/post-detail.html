@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ post.title }}
+{% endblock title %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'Shogun_speaks/post-detail.css' %}">
+<link rel="stylesheet" href="{% static 'app.css' %}">
+{% endblock css_files %}
+
+
+{% block content %}
+    <section id="summary">
+        <h2 class="post-title">{{ post.title }}</h2>
+        <article>
+            <div class="date-author">
+                <div>
+                    <time> {{ post.date|date:"M Y" }} </time>
+                </div>
+                <address>By <a href="mailto:{{ post.author.email_address }}">{{ post.author }}</a></address>
+            </div>
+            <img class="post-image" src="{{ post.image.url }}" alt="{{ post.title }}" />
+        </article>
+    
+        <main class="post-content">
+            {{ post.content|safe }}
+        </main>
+    </section>
+{% endblock content %}

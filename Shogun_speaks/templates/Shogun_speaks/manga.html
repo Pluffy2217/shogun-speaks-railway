@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Manga Archives
+{% endblock title %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'Shogun_speaks/all-posts.css' %}">
+{% endblock css_files %}
+
+
+{% block content %}
+    <section id="all-posts">
+
+        <h2 class="page-title">MANGA</h2>
+        <ul class="posts-list">
+            {% for post in all_manga_posts %}
+            {% include "Shogun_speaks/includes/manga-post.html" %}
+          {% endfor %}
+        </ul>
+    </section>
+{% endblock content %}
+

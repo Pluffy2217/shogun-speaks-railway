@@ -1,0 +1,25 @@
+<li>
+    <article class="anime-post">
+        <a class="list-item" href="{% url "anime-post-detail" post.slug %}">
+
+            
+
+            <img src="{{ post.image.url }}" alt="{{ post.title }}" class="list-item-image" />
+
+            <div class="post__content">
+
+                <div class="top-post-title"><h3 class="list-item-title">{{ post.title }}</h3></div>
+
+                <div class="sub-headings">
+                    <div class="top-post-sub-heading">
+                    <p class="list-item-author">{{ post.author }}</p>
+                </div>
+                    <div class="top-post-date"><p class="list-item-date">{{ post.date }}<p></div>
+                </div>
+                
+            </div>
+        
+        </a>
+    </article>
+</li>
+

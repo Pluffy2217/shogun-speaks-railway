@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+    {% block css_files %}{% endblock css_files %}
+
+    {% comment %} google adsense {% endcomment %}
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5606943361857709"
+     crossorigin="anonymous"></script>
+     
+</head>
+<body>
+
+    <header id="main-navigation">
+        <h1 class="title "><a class="shogun" href="{% url 'home' %}">SHOGUN SPEAKS</a></h1>
+        
+
+             <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <nav class="categories nav">
+                                <ul>
+                                    <li><a href="{% url 'anime-posts' %}" class="category">Anime</a></li>
+                                    <li><a href="{% url 'manga-posts' %}" class="category">Manga</a></li>
+                                    <li><a href="{% url 'games-posts' %}" class="category">Games</a></li>
+                                    <li><a href="{% url 'music-posts' %}" class="category">Music</a></li>
+                                    <li><a href="{% url 'art-posts' %}" class="category">Art</a></li>
+                                    <li><a href="{% url 'others-posts' %}" class="category">Others</a></li>
+                                 </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+        
+    </header>
+
+    <div class="container">
+        {% block content %}{% endblock content %}
+    </div>
+    
+
+
+</body>
+</html>

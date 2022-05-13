@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Shogun Speaks {% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'Shogun_speaks/index.css' %}">
+    <link rel="stylesheet" href="{% static 'static/app.css' %}">
+{% endblock css_files %}
+
+
+
+{% block content %}
+
+    <section id="top-post">
+        {% for post in featured|slice:":1" %}
+        {% include "Shogun_speaks/includes/anime-post.html" %}
+        {% endfor %}
+    </section>
+
+        <section id="latest-posts">
+            <h2 class="latest">LATEST</h2>
+
+            <ul class="posts-list"> 
+                {% for post in posts %}
+                {% include "Shogun_speaks/includes/anime-post.html" %}
+                {% endfor %}
+            </ul>
+        </section>
+
+    <section id="about">
+        <div><a class="about-link" href="{% url 'about' %}">About</a></div>
+        <div class="copyright">© {% now 'Y' %} Shogun Speaks</div>
+    </section>
+
+
+{% endblock content %}
