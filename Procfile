@@ -1,0 +1,1 @@
+web: gunicorn shogun_speaks.wsgi --log-file -
