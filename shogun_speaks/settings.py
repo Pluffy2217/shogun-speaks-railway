@@ -22,7 +22,7 @@ SECRET_KEY = 'django-insecure-r(jehi2x*oz$&0q+k)y9vk%#btb!_)yt$alt_#%dtm0k2884w8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['shogun-speaks.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['shogun-speaks-1.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
