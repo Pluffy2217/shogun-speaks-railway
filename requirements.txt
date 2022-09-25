@@ -1,4 +1,4 @@
-apparmor==3.0.4
+apparmor==3.0.4 
 appdirs==1.4.4
 asciidoc==10.1.4
 asgiref==3.4.1
