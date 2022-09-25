@@ -1,7 +1,7 @@
-
+apparmor==3.0.4
 appdirs==1.4.4
 asciidoc==10.1.4
-asgiref==3.5.1
+asgiref==3.4.1
 btrfsutil==5.16.2
 CacheControl==0.12.6
 cffi==1.15.0
@@ -11,7 +11,7 @@ contextlib2==0.6.0.post1
 cryptography==36.0.2
 distlib==0.3.4
 distro==1.7.0
-Django==4.0.4
+Django==4.0.1
 django-dotenv==1.4.2
 django-storages==1.12.3
 django-tinymce==3.4.0
