@@ -86,10 +86,10 @@
 
 #top-post img {
     position: relative;
-    right: -40px;
+    right: -45px;
     top: -60px;
     width: 98%;
-    height: 37.5em;
+    height: 39em;
     opacity: 100%;
 }
 #top-post .list-item-title {
@@ -107,15 +107,15 @@
     position: absolute;
     left: -20px;
     top: -60px;
-    height: 50em;
-    width: 11%;
+    height: 52em;
+    width: 10%;
     background-color: rgb(43, 144, 226);
     
 }
 #top-post .top-post-title {
     position: absolute;
     left: 80px;
-    top: 412px;
+    top: 436px;
     height: 8em;
     width: 55%;
     background-color: #ee648d;
@@ -124,7 +124,7 @@
 
 #top-post .top-post-sub-heading {
     position: absolute;
-    top: 420px;
+    top: 448px;
     left: 130px;
     display: flex;
     font-size: 11px;
@@ -187,6 +187,7 @@
     }
 
     #top-post img {
+        right: -40px;
         left: 80px;
         width: 94.3%;
         height: 220px;

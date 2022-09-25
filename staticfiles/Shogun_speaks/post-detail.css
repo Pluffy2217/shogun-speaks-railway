@@ -16,7 +16,7 @@
 }
 .post-image {
     width: 100%;
-    height: 498px;
+    height: 600px;
     margin-top: -50px;
 }
 .date-author {
@@ -66,5 +66,12 @@
         bottom: 100px;
         font-weight: 700;
         color: rgb(0, 0, 0, 0.5);
+    }
+    #summary img {
+        width: 23.5em;
+        height: 220.5px;
+    }
+    #summary span {
+        width: 23.5em;
     }
 }
